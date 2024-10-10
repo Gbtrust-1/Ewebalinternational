@@ -1,0 +1,164 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #6e7589;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container for all content */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Page Title Styling */
+h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Services Section: Flexbox Layout */
+.services-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Left and Right Columns for Services */
+.services-left,
+.services-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Individual Service Box */
+.service-box {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: #072154;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: auto;
+}
+
+/* Service Image Box */
+.service-img {
+    width: 30%;
+    margin-right: 20px; /* Space between the image and text */
+}
+
+/* Service Image */
+.service-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Service Content (Title & Description) */
+.service-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Service Title Box */
+.service-title {
+    background-color: #333b51;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Service Titles */
+.service-box h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+/* Service Description Box */
+.service-description {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Service Description */
+.service-box p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: royalblue;
+}
+
+/* Hover Effect on Service Box */
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Link Styling */
+.service-box a {
+    color: royalblue;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Link */
+.service-box a:hover {
+    color: darkblue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .services-left,
+    .services-right {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .service-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .service-content {
+        width: 100%;
+        text-align: center;
+    }
+}
+ 
